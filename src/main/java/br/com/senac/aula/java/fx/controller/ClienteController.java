@@ -50,7 +50,7 @@ public class ClienteController {
         // alteração para teste de commit
 
         List<Cliente> cliList = ClienteService.carregarClientes();
-
+        // this.carregarListClientes();
         tabelaClientes.getItems().addAll(cliList);
 
         tabelaClientes.setOnMouseClicked(new EventHandler<javafx.scene.input.MouseEvent>() {
