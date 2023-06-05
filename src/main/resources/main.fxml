@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="759.0" prefWidth="1159.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.senac.aula.java.fx.controller.ClienteController">
+   <children>
+      <AnchorPane prefHeight="498.0" prefWidth="1159.0">
+         <children>
+            <Label layoutX="34.0" layoutY="21.0" text="Nome" />
+            <TextField fx:id="nome" layoutX="34.0" layoutY="65.0" prefHeight="31.0" prefWidth="1062.0" />
+            <Label layoutX="34.0" layoutY="111.0" text="Documento" />
+            <TextField fx:id="documento" layoutX="34.0" layoutY="143.0" prefHeight="31.0" prefWidth="1062.0" AnchorPane.bottomAnchor="170.0" AnchorPane.leftAnchor="34.0" AnchorPane.rightAnchor="63.0" AnchorPane.topAnchor="143.0" />
+            <Label layoutX="37.0" layoutY="197.0" text="RG" />
+            <TextField fx:id="rg" layoutX="34.0" layoutY="231.0" prefHeight="31.0" prefWidth="1062.0" />
+            <Button fx:id="btnOk" layoutX="42.0" layoutY="288.0" mnemonicParsing="false" onAction="#executarOk" text="Ok" />
+            <Button fx:id="btnExcluir" layoutX="122.0" layoutY="288.0" mnemonicParsing="false" onAction="#executarExcluir" text="Excluir" />
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </AnchorPane>
+      <AnchorPane prefHeight="395.0" prefWidth="1094.0">
+         <children>
+            <TableView fx:id="tabelaClientes" layoutX="24.0" prefHeight="395.0" prefWidth="1062.0">
+              <columns>
+                <TableColumn fx:id="colunaNome" prefWidth="160.0" text="Nome" />
+                <TableColumn fx:id="colunaDocumento" prefWidth="416.0" text="Documento" />
+                  <TableColumn fx:id="colunaRg" prefWidth="372.0" text="RG" />
+              </columns>
+            </TableView>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </AnchorPane>
+   </children>
+</VBox>
