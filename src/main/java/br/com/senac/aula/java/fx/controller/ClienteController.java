@@ -47,6 +47,7 @@ public class ClienteController {
         colunaDocumento.setCellValueFactory(new PropertyValueFactory<>("documento"));
         colunaRg.setCellValueFactory(new PropertyValueFactory<>("rg"));
 
+        // alteração para teste de commit
 
         List<Cliente> cliList = ClienteService.carregarClientes();
 
